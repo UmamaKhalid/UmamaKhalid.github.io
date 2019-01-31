@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="libraries/FlexSlider/flexslider.css">
-    <link rel="stylesheet" href="font-awesome-4.6.3/font-awesome-4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="libraries/general.css">
     <link href="https://fonts.googleapis.com/css?family=Suranna" rel="stylesheet">
 </head>
@@ -19,19 +19,6 @@
     <!--===========================================================================================================-->
     <div id="banner" class="foo">
         <div id="gradient" class=" pd-top-5 pd-bottom-80">
-
-
-            <!--========================  TOP-LINE VISIBLE IN DESKTOP BUT HIDDEN IN MOB =====================-->
-
-            <div id="contact-header" class="container-fluid pd-bottom-10 hidden-sm">
-                <div class="container">
-                   <li class="pd-right-10"><span>www.linkedin.com/in/umama-khalid-8aa106157/</span></li>
-                    <li class="pd-left-10 pd-right-10" id="mid-li"><span>www.fiverr.com/umamakhalid</span></li>
-                    <li class="pd-left-10"><span>umamakhalid39@gmail.com</span></li>
-                </div>
-            </div>
-
-
 
 
             <!--=========== empty div of heght 50 just for mob screen =====================-->
@@ -285,6 +272,41 @@
     <!--=================================================== FOOTER ==============================================================-->
     <!--========================================================================================================================-->
 
+   <div id="footer" class="pd-top-10 pd-bottom-20">
+
+            <div class="pd-left-15">
+                <div class="col-sm-4 hidden-md hidden-lg"></div>
+
+                <div class="col-md-12 col-sm-4 text-center">
+                </div>
+
+                <div class="col-sm-4 hidden-md hidden-lg"></div>
+
+            </div>
+
+            <div class="mg-top-30 col-xs-12 text-center">
+
+                <div class="col-sm-2 hidden-md hidden-lg"></div>
+
+                <div class="col-md-12 col-sm-8 text-center">
+                    <h1 class="text-pink fw-700">The journey is your reward</h1>
+                    <h4 class="mg-bottom-30 mg-top-20">Live Intentionally . Live Authentically</h4>
+                    
+                    <h4 class="mg-top-20 display-inline">Contact Me</h4>
+
+                    <ul class="display-inline">
+                        <li><a href="https://www.linkedin.com/in/umama-khalid-8aa106157/"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="https://www.fiverr.com/umamakhalid"><i class="fa fa-envelope-o"></i></a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-sm-2 hidden-md hidden-lg"></div>
+
+            </div>
+
+        </div>
+   
     <div class="container-fluid" id="footer-black">
         <h5>Copyright by Umama Khalid</h5>
     </div>
@@ -306,6 +328,19 @@
     <script src="libraries/FlexSlider/jquery.flexslider.js"></script>
 
     <script>
+        
+        
+        //================ FOR NEWS SLIDER ============
+
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "fade"
+            });
+        });
+
+        //=============================================
+        //=============================================
+        
         //============ FOR HEADER BACKGROUND ==========
 
         $(".foo").backstretch([
@@ -316,17 +351,6 @@
             duration: 6000
         });
 
-
-        //=============================================
-        //=============================================
-
-        //================ FOR NEWS SLIDER ============
-
-        $(window).load(function() {
-            $('.flexslider').flexslider({
-                animation: "fade"
-            });
-        });
 
         //=============================================
         //=============================================
